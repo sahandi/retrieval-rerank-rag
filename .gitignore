@@ -1,20 +1,51 @@
-# Python virtual environment
+# =========================
+# Python
+# =========================
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ipynb_checkpoints/
+
+# Virtual env
 .venv/
 
-# Hugging Face cache (on external SSD)
+# =========================
+# Hugging Face / Transformers cache
+# =========================
 .hf/
 
-# Data and outputs (never commit large files)
-data/
+# =========================
+# Data: never commit raw/large files
+# =========================
+data/raw/
+data/processed/
+
+# But keep small samples tracked
+!data/sample/
+!data/sample/**
+
+# =========================
+# Indexes (Chroma / FAISS) - large
+# =========================
+indexes/
+
+# =========================
+# Outputs: usually large/loggy
+# =========================
 outputs/
 
-# macOS junk
-.DS_Store
+# But allow small evaluation JSON results
+!outputs/*.json
 
-# VS Code
+# =========================
+# macOS / editor
+# =========================
+.DS_Store
 .vscode/
 
+# =========================
 # Databases and artifacts
+# =========================
 *.db
 *.sqlite
 *.parquet
