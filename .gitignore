@@ -33,6 +33,7 @@ indexes/
 # Outputs: usually large/loggy
 # =========================
 outputs/
+!outputs/*.json
 
 # But allow small evaluation JSON results
 !outputs/*.json
