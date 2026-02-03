@@ -1,0 +1,22 @@
+# Python virtual environment
+.venv/
+
+# Hugging Face cache (on external SSD)
+.hf/
+
+# Data and outputs (never commit large files)
+data/
+outputs/
+
+# macOS junk
+.DS_Store
+
+# VS Code
+.vscode/
+
+# Databases and artifacts
+*.db
+*.sqlite
+*.parquet
+*.pkl
+
