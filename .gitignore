@@ -32,7 +32,8 @@ indexes/
 # =========================
 # Outputs: usually large/loggy
 # =========================
-outputs/
+outputs/*
+!outputs/
 !outputs/*.json
 
 # =========================
