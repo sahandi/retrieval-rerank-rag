@@ -90,7 +90,7 @@ def main():
             "ndcg@10": n_sum / max(n, 1),
         }
 
-    out = Path("outputs/week1_eval_overlap_only.json")
+    out = Path("outputs/retrieval_eval_overlap_only.json")
     out.parent.mkdir(parents=True, exist_ok=True)
     out.write_text(json.dumps(results, indent=2), encoding="utf-8")
     print(json.dumps(results, indent=2))
